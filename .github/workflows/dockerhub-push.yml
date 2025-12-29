@@ -5,6 +5,8 @@ on:
     tags:
       - '*'           # Push events to every tag not containing /
 
+  schedule:
+    - cron: "0 0 * * *"
 env:
   REGISTRY: hmda/hmda-platform
 
