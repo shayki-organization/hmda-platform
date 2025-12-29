@@ -5,6 +5,8 @@ on:
       service:
         required: true
         type: string
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   test-service:
     runs-on: ubuntu-latest
