@@ -1,6 +1,9 @@
 name: HMDA ECR Image Push
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   release_to_ecr:
